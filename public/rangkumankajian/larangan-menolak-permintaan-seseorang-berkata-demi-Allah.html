@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rulearn home</title>
+
+<!--LINK STYLE-->
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/swiper-card.css">
+
+
+
+<!--TAILWIND-->
+<link rel="stylesheet" href="tailwind/output.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tailwind/tailwind.config.js"></script>
+
+
+
+<!--FONTAWESOME-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+ 
+ body {
+	background-color: #fff;
+	color: #000;
+}
+
+.dark {
+	background-color: #090918;
+	color: #fff;
+}
+.dark .exit {
+	background-color: #9d00ff;
+	color: #fff;
+}
+
+.dark .opening {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #47474725;
+}
+.dark nav {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #071839af;
+}
+
+.show-notif:active{
+  display: none;
+}
+
+#dark-toggle:checked ~ label .toggle-circle{
+   transform: translateX(12px);
+}
+
+
+</style>
+</head>
+
+
+<body class=" initu h-auto overflow-x-hidden">
+    <nav class="navi z-40  backdrop-blur-sm border border-b">
+        <div class="brand-group flex items-center gap-2 justify-center">
+          <h2 class="brand text-3xl font-bold font-montserrat">aditya's notes</h2>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="menu-list" class="hidden show ">
+          <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="#" id="ru" class="">Web Rulearn</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sun text-orange-500 text-sm mr-2"></i>
+              <input type="checkbox" name="" class="hidden" id="dark-toggle">
+              <label for="dark-toggle" type="text">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                  <div class="toggle-circle h-4 w-4 rounded-full transition duration-300 ease-in-out bg-white"></div>
+                </div>
+              </label>
+              <i class="fa-solid fa-moon text-yellow-300 text-sm ml-2"></i>
+            </div>
+        </ul>
+      </nav>
+    
+<div class="flex gap-1.5 items-center exit  justify-center bg-black p-2 py-2.5 rounded-full top-24 ml-6 text-white fixed">
+  <a href="" class=""><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></a>
+  
+  <div class="notification fixed z- w-full top-1/2 transform -translate-y-1/2 mx-auto z-40 px-4" style="left: 0.3px; display: none; height: auto;">
+    <div class="card-notif relative bg-white mx-auto p-0 mt-0 none w-full h-auto pb-24   shadow-2xl" style="max-width: 621px; margin-left: auto; margin-right: auto;">
+      <div class="top w-full flex px-5 flex-row justify-between items-center border">
+        <p class="text-black text-2xl">Notifikasi</p>
+        <i class="fa-solid fa-xmark cursor-pointer text-zinc-300 hover:text-red-600" id="close"></i>
+      </div>
+      <div class="gif w-full mx-auto mt-4">
+        <img src="image/repair-tools.gif" width="154" class="mx-auto" height="auto" alt="" srcset="">
+      </div>
+      <div class="w-full mx-auto text-center relative" style="align-items: center;">
+        <p class="text-gray-300 mx-auto text-center text-lg" style="font-family: 'Montserrat',sans-serif;">Ops, maaf! Website sedang dibangun</p>
+        <p class="text-black text-center text-sm">Kami hanya bisa menampilkan UI sementara</p>
+        <a href="" class="p-2 bg-blue-600 text-center text-white top-8 relative mx-auto">Lihat UI</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+    <div class="opening py-36 w-11/12 top-32 px-8 mx-auto border  rounded-md">
+        <p class="text-4xl text-center pb-3 font-medium  ">Larangan Menolak Permintaan Seseorang yang menyebut 'Demi Allah'</p>
+        <p class="text-lg text-center pb-3 font-thin ">Ustadz Abu Aslam</p>
+        <p class="mt-28">Bagaimana larangan bagi orang yang meminta dengan nama Allah kemudian kita menolaknya?</p>
+        <p class="mt-8 font-bold">
+          Abu Hurairah Kitab Targhib wa Tarhib no. 852
+        </p>
+        <p class="mt-5">
+          Dari Ibnu Umar RA ia berkata, Rasulullah SAW bersabda:
+        </p>
+        <div class="quran w-11/12 mx-auto">
+            <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَعَنْ اِبْنِ عُمَرَ -رَضِيَ اَللَّهُ عَنْهُمَا- قَالَ: عَنِ النَّبِيِّ – صلى الله عليه وسلم – قَالَ: – مِنْ اسْتَعَاذَكُمْ بِاَللَّهِ فَأَعِيذُوهُ, وَمَنْ سَأَلَكُمْ بِاَللَّهِ فَأَعْطُوهُ, وَمَنْ أَتَى إِلَيْكُمْ مَعْرُوفًا فَكَافِئُوهُ, فَإِنْ لَمْ تَجِدُوا, فَادْعُوا لَهُ – أَخْرَجَهُ اَلْبَيْهَقِيُّ.</p>
+            <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                <p class="arti mt-6" style="max-width: 850px;">Artinya: "Barangsiapa yang meminta perlindungan dengan nama Allah maka lindungilah, barangsiapa yang meminta dengan nama Allah maka berilah, barang siapa yang mengundang kalian maka penuhilah, barangsiapa yang berbuat baik kepada kalian maka balaslah, jika kalian tidak mempunyai sesuatu untuk membalasnya maka doakanlah dia hingga kalian merasa bahwa kalian telah membalasnya". <span class="text-orange-500 font-bold">(HR. Abu Dawud dan An-Nasa'i dengan sanad yang shahih.)</span></p>
+                <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+            </div>
+        </div>
+        <p class="mt-6">seperti yang kita lihat hadits yang diriwayatkan oleh Abu Dawud dan An-Nasa'i sudah jelas bahwa Rasulullah SAW memerintahkan kita untuk melindungi, memberi, dan memenuhi bagi seseorang yang mengucapkan dengan kata 'Demi Allah', misalnya</p>
+        <p class="mt-5">
+            Seorang pengemis atau orang miskin yang tidak punya harta dan uang lalu datang kepada kita untuk makan kemudian ia mengucapkan ‘Demi Allah saya tidak punya uang‘. Maka hendaknya kita memberikannya
+        </p>
+        <p class="mt-8 font-bold">
+            Namun bagaimana jika pengemis tersebut berbohong menggunakan alasan kalimat itu atas ucapannya dengan nama Allah dan kita tidak tahu?
+
+        </p>
+        <p class="mt-5">
+            Ia termasuk orang yang berdusta atas nama Allah dan kita tidak dosa. Maka kita harus memberinya dengan semampu apa yang kita punya dari diri kita untuk memberi seseorang yang menyebut dengan nama Allah. Jika kita tidak memberi dan menolak permintaannya maka ia termasuk
+        </p>
+
+        <ol type="1" >
+            <li class="">1. Orang yang melecehkan nama Allah.</li>
+            <li class="">2. Menjadi orang yang terlaknat.</li>
+            <li class="">3. Termasuk seburuk-buruk manusia.</li>
+        </ol>
+
+        <p class="mt-8">Tetapi ada pula juga untuk kita tidak memenuhi permintaannya ketika seseorang itu menyebut dengan nama Allah tetapi arahnya ke kemungkaran dan kemaksiatan seperti (judi, hutang, mencuri, maksiat dan sejenisnya) maka itu diharamkan dalam syariat islam.</p>
+
+        <p class="mt-5">Allah Ta'ala berfirman,</p>
+
+        <div class="quran w-11/12 mx-auto">
+            <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ شَدِيدُ الْعِقَابِ</p>
+            <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                <p class="arti mt-6" style="max-width: 850px;">Artinya: “Dan jangan tolong-menolong dalam berbuat dosa dan pelanggaran. Dan bertakwalah kamu kepada Allah, sesungguhnya Allah amat berat siksaNya. ”<span class="text-orange-500 font-medium"> (QS. Al Maidah: 2).
+                </span></p>
+                <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+            </div>
+        </div>
+
+
+        <p class="mt-14 date pl-1.5 text-zinc-400"></p>
+    </div>
+
+
+    <div class="flex flex-col w-full z-10 relative">
+    <div class=" text-center z-0  py-20 relative my-auto bg-black" style="height:auto;">
+      <p class="text-white text-4xl font-medium mb-10" style="font-family: 'Montserrat', sans-serif;">Terimakasih telah membaca! جزاك اللهُ خيرًا</p>
+      <a href="" class="bg-violet-600 text-white my-8 p-2 rounded-full">Developed by ADITYApra</a>
+    </div>
+  </div>
+
+
+    <script src="js script/nav.js"></script>
+    <script src="js script/darkL.js"></script>
+    <script src="js script/filter.js"></script>
+    <script src="js script/dateportfolio.js"></script>
+
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind/tailwind.config.js"></script>
+    <script src=""></script>
+</body>
+</html>

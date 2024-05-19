@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rulearn home</title>
+
+<!--LINK STYLE-->
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/swiper-card.css">
+
+
+
+<!--TAILWIND-->
+<link rel="stylesheet" href="tailwind/output.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tailwind/tailwind.config.js"></script>
+
+
+
+<!--FONTAWESOME-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+ 
+ body {
+	background-color: #fff;
+	color: #000;
+}
+
+.dark {
+	background-color: #090918;
+	color: #fff;
+}
+.dark .exit {
+	background-color: #9d00ff;
+	color: #fff;
+}
+
+.dark .opening {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #47474725;
+}
+.dark nav {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #071839af;
+}
+
+.show-notif:active{
+  display: none;
+}
+
+#dark-toggle:checked ~ label .toggle-circle{
+   transform: translateX(12px);
+}
+
+
+</style>
+</head>
+
+
+<body class=" initu h-auto overflow-x-hidden">
+    <nav class="navi z-40  backdrop-blur-sm border border-b">
+        <div class="brand-group flex items-center gap-2 justify-center">
+          <h2 class="brand text-3xl font-bold font-montserrat">aditya's notes</h2>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="menu-list" class="hidden show ">
+          <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="#" id="ru" class="">Web Rulearn</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sun text-orange-500 text-sm mr-2"></i>
+              <input type="checkbox" name="" class="hidden" id="dark-toggle">
+              <label for="dark-toggle" type="text">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                  <div class="toggle-circle h-4 w-4 rounded-full transition duration-300 ease-in-out bg-white"></div>
+                </div>
+              </label>
+              <i class="fa-solid fa-moon text-yellow-300 text-sm ml-2"></i>
+            </div>
+        </ul>
+      </nav>
+    
+<div class="flex gap-1.5 items-center exit  justify-center bg-black p-2 py-2.5 rounded-full top-24 ml-6 text-white fixed">
+  <a href="" class=""><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></a>
+  
+  <div class="notification fixed z- w-full top-1/2 transform -translate-y-1/2 mx-auto z-40 px-4" style="left: 0.3px; display: none; height: auto;">
+    <div class="card-notif relative bg-white mx-auto p-0 mt-0 none w-full h-auto pb-24   shadow-2xl" style="max-width: 621px; margin-left: auto; margin-right: auto;">
+      <div class="top w-full flex px-5 flex-row justify-between items-center border">
+        <p class="text-black text-2xl">Notifikasi</p>
+        <i class="fa-solid fa-xmark cursor-pointer text-zinc-300 hover:text-red-600" id="close"></i>
+      </div>
+      <div class="gif w-full mx-auto mt-4">
+        <img src="image/repair-tools.gif" width="154" class="mx-auto" height="auto" alt="" srcset="">
+      </div>
+      <div class="w-full mx-auto text-center relative" style="align-items: center;">
+        <p class="text-gray-300 mx-auto text-center text-lg" style="font-family: 'Montserrat',sans-serif;">Ops, maaf! Website sedang dibangun</p>
+        <p class="text-black text-center text-sm">Kami hanya bisa menampilkan UI sementara</p>
+        <a href="" class="p-2 bg-blue-600 text-center text-white top-8 relative mx-auto">Lihat UI</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+    <div class="opening py-36 w-11/12 top-32 px-8 mx-auto border  rounded-md">
+        <p class="text-4xl text-center pb-3 font-medium  ">Tips Menahan Marah</p>
+        <p class="text-lg text-center pb-3 font-thin ">Ustadz Abdullah Zaen</p>
+        <p class="mt-28">Bagaimana tips menahan marah?</p>
+        <p class="mt-8">
+            Shalawat dan salam semoga senantiasa tercurahkan kepada nabi agung Muhammad SAW kepada keluarganya, sahabatnya, dan umatnya yang setia mengikuti tuntunannya hingga di akhirat nanti, para hadirin dan hadirat serta pembaca.
+        </p>
+        <p class="mt-5">
+            Kita masih bersama di hadits no. 43 yang dibawakan oleh Imam Ibnu Hajar Al-Asqalani Rahimahullah dalam kitab beliau Bulughul Maram Kitabul Jami’, yaitu hadits dari Abu Hurairah RA ia berkata, Rasulullah SAW bersabda: 
+
+        </p>
+        <div class="quran w-11/12 mx-auto">
+            <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَعَنْ اِبْنِ عُمَرَ -رَضِيَ اَللَّهُ عَنْهُمَا- قَالَ: عَنِ النَّبِيِّ – صلى الله عليه وسلم – قَالَ: – مِنْ اسْتَعَاذَكُمْ بِاَللَّهِ فَأَعِيذُوهُ, وَمَنْ سَأَلَكُمْ بِاَللَّهِ فَأَعْطُوهُ, وَمَنْ أَتَى إِلَيْكُمْ مَعْرُوفًا فَكَافِئُوهُ, فَإِنْ لَمْ تَجِدُوا, فَادْعُوا لَهُ – أَخْرَجَهُ اَلْبَيْهَقِيُّ.</p>
+            <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                <p class="arti mt-6" style="max-width: 850px;">“Kekuatan seseorang itu bukan diukur dari kepandaiannya dalam bertarung secara fisik, akan tetapi kekuatan seseorang itu hanya diukur dari kemampuan dia dalam menahan amarahnya.”<span class="text-orange-500 font-bold">(HR Bukhari dan Muslim)</span></p>
+                <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+            </div>
+        </div>
+        <p class="mt-6">Hari ini kita akan mengkaji tips menahan marah dan apa langkah-langkah teknis yang perlu dijalankan?</p>
+        <p class="mt-5">
+            Disini terdapat ada 5 tips yang diajarkan oleh nabi SAW untuk menahan marah yaitu:
+        </p>
+        <ol type="1" class="mt-5 px-6">
+            <li class="">1. Merenungi keutamaan menahan marah, jika kita hendak akan marah kita harus mengingat keutamaan dari menahan amarah agar tidak di kemudian hari agar tidak menjadi penyesalan kepada diri kita seperti malu(jika sudah diviralkan oleh orang lain) atau bahkan membunuh orang yang sangat dicintai gara-gara marah. Maka ketika kita akan marah maka ingatlah keutamaan menahan marah yakni terhindar dari penyesalan dan kedua kita mendapatkan janji surga dari Allah SWT.</li>
+            <div class="quran w-11/12 mx-auto">
+                <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَعَنْ اِبْنِ عُمَرَ -رَضِيَ اَللَّهُ عَنْهُمَا- قَالَ: عَنِ النَّبِيِّ – صلى الله عليه وسلم – قَالَ: – مِنْ اسْتَعَاذَكُمْ بِاَللَّهِ فَأَعِيذُوهُ, وَمَنْ سَأَلَكُمْ بِاَللَّهِ فَأَعْطُوهُ, وَمَنْ أَتَى إِلَيْكُمْ مَعْرُوفًا فَكَافِئُوهُ, فَإِنْ لَمْ تَجِدُوا, فَادْعُوا لَهُ – أَخْرَجَهُ اَلْبَيْهَقِيُّ.</p>
+                <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                    <p class="arti mt-6" style="max-width: 850px;">Artinya: "Barangsiapa menahan amarah, sedangkan dia mampu untuk melaksanakannya, maka Allah kelak akan memanggilnya di mata semua makhluk, hingga Allah menyuruhnya memilih bidadari manakah yang disukainya,"<span class="text-orange-500 font-bold">(Hadits diriwayatkan Imam Abu Dawud, Imam Tirmidzi, dan Imam Ibnu Majah).</span></p>
+                    <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+                </div>
+            </div>
+            <li class="mt-8">2. Rasulullah SAW mengajarkan kita kalau lagi marah mengubah posisi tubuh, agar menjadi kita menjadi rileks dan akan mengurangi potensi bergerak(tampar, tendang dll.) dan balas dendam. Rasulullah SAW bersabda:</li>
+
+            <div class="quran w-11/12 mx-auto">
+                <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَعَنْ اِبْنِ عُمَرَ -رَضِيَ اَللَّهُ عَنْهُمَا- قَالَ: عَنِ النَّبِيِّ – صلى الله عليه وسلم – قَالَ: – مِنْ اسْتَعَاذَكُمْ بِاَللَّهِ فَأَعِيذُوهُ, وَمَنْ سَأَلَكُمْ بِاَللَّهِ فَأَعْطُوهُ, وَمَنْ أَتَى إِلَيْكُمْ مَعْرُوفًا فَكَافِئُوهُ, فَإِنْ لَمْ تَجِدُوا, فَادْعُوا لَهُ – أَخْرَجَهُ اَلْبَيْهَقِيُّ.</p>
+                <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                    <p class="arti mt-6" style="max-width: 850px;">Artinya: “Bila salah satu di antara kalian marah saat berdiri, maka duduklah. Jika marahnya telah hilang (maka sudah cukup). Namun jika tidak lenyap pula maka berbaringlah.”<span class="text-orange-500 font-bold">(HR. Abu Daud, no. 4782. Al-Hafizh Abu Thahir mengatakan bahwa hadits ini shahih).</span></p>
+                    <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+                </div>
+            </div>
+            <li class="mt-8">3. Mengucapkan Ta'awudz yakni:</li>
+
+            <div class="quran w-11/12 mx-auto">
+                <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ</p>
+                <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                    <p class="arti mt-6" style="max-width: 850px;">Artinya: "A'uudzubillaahi minasy syaithaanir rajiim (Saya berlindung diri kepada Allah dari godaan setan yang terkutuk).”</p>
+                    <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+                </div>
+            </div>
+            <p class="mt-4">Ucapkan kalimat ini agar terhindar dari godaan syaitan, bukan hanya ucapan di lisan tetapi dimasukkan juga di hati dan dipahami.</p>
+
+            <li class="mt-8">4. Tenangkanlah dan Kontrol mulut, tangan, dan kakimu</li>
+
+            <div class="quran w-11/12 mx-auto">
+                <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ</p>
+                <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                    <p class="arti mt-6" style="max-width: 850px;">Artinya: Seandainya salah seorang dari kalian itu marah, maka diamlah.”<span class="text-orange-500 font-bold">(HR. Ahmad dinyatakan shahih oleh Al-Albani)</span></p>
+                    <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+                </div>
+            </div>
+            <p class="mt-4">karena seseorang pada saat marah itu sulit untuk diam dan mengontrol emosi, dengan demikian kita harus berusaha membuang rasa marahnya dengan membaca Ta’awudz meminta bantuan kepada Allah yang Maha Kuasa dan Maha Kuat.</p>
+        </ol>
+
+        
+
+        <p class="mt-5">Allah Ta'ala berfirman,</p>
+
+        <div class="quran w-11/12 mx-auto">
+            <p class="mt-6 text-center text-3xl arabic" style="font-family: 'Noto Naskh Arabic', serif;">وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ وَاتَّقُوا اللَّهَ إِنَّ اللَّهَ شَدِيدُ الْعِقَابِ</p>
+            <div class="flex w-full mx-auto flex-row flex-wrap items-center gap-5 justify-center">
+                <p class="arti mt-6" style="max-width: 850px;">Artinya: “Dan jangan tolong-menolong dalam berbuat dosa dan pelanggaran. Dan bertakwalah kamu kepada Allah, sesungguhnya Allah amat berat siksaNya. ”<span class="text-orange-500 font-medium"> (QS. Al Maidah: 2).
+                </span></p>
+                <i class="fa-solid fa-copy pt-6" style="color: #d1d1d1; font-size: 26px;"></i>
+            </div>
+        </div>
+
+
+        <p class="mt-14 date pl-1.5 text-zinc-400"></p>
+    </div>
+
+
+    <div class="flex flex-col w-full z-10 relative">
+    <div class=" text-center z-0  py-20 relative my-auto bg-black" style="height:auto;">
+      <p class="text-white text-4xl font-medium mb-10" style="font-family: 'Montserrat', sans-serif;">Terimakasih telah membaca! جزاك اللهُ خيرًا</p>
+      <a href="" class="bg-violet-600 text-white my-8 p-2 rounded-full">Developed by ADITYApra</a>
+    </div>
+  </div>
+
+
+    <script src="js script/nav.js"></script>
+    <script src="js script/darkL.js"></script>
+    <script src="js script/filter.js"></script>
+    <script src="js script/dateportfolio.js"></script>
+
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind/tailwind.config.js"></script>
+    <script src=""></script>
+</body>
+</html>

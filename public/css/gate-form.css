@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+
+a.navbar-brand{
+    color: rgb(79, 79, 79);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+   
+  }
+  
+  .collapse{
+    background: #9D9FC4;
+    border: none;
+  }
+
+  #content{
+    background: #fdfdfd;
+    width: 100%;
+    height: 580px;
+  }
+
+.form-card{
+    background-color: #ffff;
+    height: 540px;
+    width: 90%;
+    max-width: 1080px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: auto;
+    margin-top: 100px;
+    }
+
+.card-content{
+    padding-top: 100px;
+    
+}
+
+/* Responsive */
+/* Ukuran Dekstop */
+@media screen and (max-width: 1280px) {
+  .card-content{
+    gap: 8em;
+  }
+
+  .img-vector{
+    width: 300px;
+    
+  }
+  
+  
+  /* Ukuran Tablet */
+  @media screen and (max-width: 768px) {
+    
+    .component-button{
+      
+      }
+
+      .card-content{
+        gap: 2em;
+        padding: 20px;
+      }
+
+      .img-vector{
+        width: 250px;
+      }
+    
+    }
+  
+  
+  /* Ukuran Mobile */
+  @media screen and (max-width: 480px) {
+    .component-button{
+    width: 147px;
+  
+  } 
+
+  .card-content{
+    gap: 1em;
+  }
+
+  .img-vector{
+    width: 250px;
+  }
+
+}
+
+.component-img{
+    
+}
+
+.img-vector{
+    height: auto;
+}
+
+.component-button{
+    
+    margin: 0;
+}
+
+.regbtn{
+    color: #9D9FC4;
+    border: 2px solid #9D9FC4;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+
+}
+
+.logbtn{
+    color: white;
+    background-color: #9D9FC4;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+}

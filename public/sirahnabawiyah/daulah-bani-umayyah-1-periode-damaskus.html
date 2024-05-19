@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rulearn home</title>
+
+<!--LINK STYLE-->
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/swiper-card.css">
+
+
+
+<!--TAILWIND-->
+<link rel="stylesheet" href="tailwind/output.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tailwind/tailwind.config.js"></script>
+
+
+
+<!--FONTAWESOME-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!--FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+ 
+ body {
+	background-color: #fff;
+	color: #000;
+}
+
+.dark {
+	background-color: #090918;
+	color: #fff;
+}
+.dark .exit {
+	background-color: #9d00ff;
+	color: #fff;
+}
+
+.dark .opening {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #47474725;
+}
+.dark nav {
+	border: 1px solid #ffffff10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #071839af;
+}
+
+.show-notif:active{
+  display: none;
+}
+
+#dark-toggle:checked ~ label .toggle-circle{
+   transform: translateX(12px);
+}
+
+
+</style>
+</head>
+
+
+<body class=" initu h-auto overflow-x-hidden">
+    <nav class="navi z-40  backdrop-blur-sm border border-b">
+        <div class="brand-group flex items-center gap-2 justify-center">
+          <h2 class="brand text-3xl font-bold font-montserrat">aditya's notes</h2>
+        </div>
+        <div id="menu-icon" class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="menu-list" class="hidden show ">
+          <li>
+              <a href="index.html">Beranda</a>
+            </li>
+            <li>
+              <a href="#" id="ru" class="">Web Rulearn</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <div class="flex items-center">
+              <i class="fa-solid fa-sun text-orange-500 text-sm mr-2"></i>
+              <input type="checkbox" name="" class="hidden" id="dark-toggle">
+              <label for="dark-toggle" type="text">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                  <div class="toggle-circle h-4 w-4 rounded-full transition duration-300 ease-in-out bg-white"></div>
+                </div>
+              </label>
+              <i class="fa-solid fa-moon text-yellow-300 text-sm ml-2"></i>
+            </div>
+        </ul>
+      </nav>
+    
+<div class="flex gap-1.5 items-center exit  justify-center bg-black p-2 py-2.5 rounded-full top-24 ml-6 text-white fixed">
+  <a href="" class=""><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></a>
+  
+  <div class="notification fixed z- w-full top-1/2 transform -translate-y-1/2 mx-auto z-40 px-4" style="left: 0.3px; display: none; height: auto;">
+    <div class="card-notif relative bg-white mx-auto p-0 mt-0 none w-full h-auto pb-24   shadow-2xl" style="max-width: 621px; margin-left: auto; margin-right: auto;">
+      <div class="top w-full flex px-5 flex-row justify-between items-center border">
+        <p class="text-black text-2xl">Notifikasi</p>
+        <i class="fa-solid fa-xmark cursor-pointer text-zinc-300 hover:text-red-600" id="close"></i>
+      </div>
+      <div class="gif w-full mx-auto mt-4">
+        <img src="image/repair-tools.gif" width="154" class="mx-auto" height="auto" alt="" srcset="">
+      </div>
+      <div class="w-full mx-auto text-center relative" style="align-items: center;">
+        <p class="text-gray-300 mx-auto text-center text-lg" style="font-family: 'Montserrat',sans-serif;">Ops, maaf! Website sedang dibangun</p>
+        <p class="text-black text-center text-sm">Kami hanya bisa menampilkan UI sementara</p>
+        <a href="" class="p-2 bg-blue-600 text-center text-white top-8 relative mx-auto">Lihat UI</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+    <div class="opening py-36 w-11/12 top-32 px-8 mx-auto border  rounded-md">
+        <p class="text-4xl text-center pb-3 font-medium  ">Daulah Bani Umayyah 1 (periode Damaskus)</p>
+        <p class="text-lg text-center pb-3 font-thin ">Sejarah Singkat</p>
+        <p class="mt-28">Mengenal Bani Umayyah</p>
+        <p class="mt-8">
+            Pada masa kekuasaan Bani Umayyah, kota Makkah dan Madinah menjadi tempat berkembang musik, lagu dan puisi rintik, sementara di Baskah dan Kuffah menjadi pusat aktifitas keilmuan Dunia Islam.
+        </p>
+        <p class="mt-6">
+            Pada masa oemerintahan Al-Walid, Damaskus mengalami kemajuan-kemajuan. sehingga keadaan rakyat damai dan sejahtera, diantara kemajuan tersebut adalah telah dibangun adanya rumah sakit bagi penderita penyakit kronis, dan rumah-rumah penderita penyakit lepra.
+
+        </p>
+        <p class="mt-6">
+            Penyeragaman bahasa sehingga semua administrasi publik harus berubah bahasa Yunani ke bahasa Arab, pencetakan uang emas dan perak islam, dan pengembangan layanan pos dengan menggunakan kuda antara Damaskud dengan provinsi lain.
+
+        </p>
+        <p class="mt-6">
+            Di Bidang Pendidikan, pada masa Bani Umayyah belum ada pendidikan formal, masyarakat yang ingin belajar menggunakan Masjud sebagai sarana mempelajari Al-Quran dan Hadits.
+
+        </p>
+        <p class="">Ilmu-ilmu yang berkembang antara lain sebagai berikut:</p>
+        <ol class="mt-5 pl-4">
+            <li class=""><p class="">A. Ilmu Agama berupa perkembangan ilmu Al-Quran, Hadits, dan Fiqih</p></li>
+            <li class=""><p class="">B. Ilmu Sejarah dan Geografi yang mempelajari tentang perjalanan hidup dan peristiwa</p></li>
+            <li class=""><p class="">C. Ilmu Bahasa yang mempelaari seperti Nahwu, Sharaf dan sebagainya</p></li>
+            <li class=""><p class="">D. Ilmu Filsafat berupa mantik/logika, kimia, astonomy, berhitung,</p></li>
+            <li class=""><p class="">E. Ilmu Kedokteran</p></li>
+            <li class=""><p class="">F. Seni Rupa</p></li>
+            <li class=""><p class="">G. Astronologi dan Astronomi</p></li>
+            <li class=""><p class="">H. Ilmu Fisika</p></li>
+        </ol>
+
+        <div class="flex flex-wrap gap-2"><p class="font-bold">Sejarah Rinci: </p><a href="https://almanhaj.or.id/6254-perang-tabk-atau-alusrah.html" class="text-bold text-blue-500">Klik untuk mengetahui sejarah lebih rinci</a></div>
+
+
+    <script src="js script/nav.js"></script>
+    <script src="js script/darkL.js"></script>
+    <script src="js script/filter.js"></script>
+    <script src="js script/dateportfolio.js"></script>
+
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind/tailwind.config.js"></script>
+    <script src=""></script>
+</body>
+</html>

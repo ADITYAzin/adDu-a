@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white
+}
+
+
+  .card-caption{
+    background-color: #FE3B82;
+    height: 195px;
+    width: 100%;
+    border-radius: 40px;
+    z-index: 3;
+    position: relative;
+    margin: auto;
+    margin-top: 160px;
+    overflow: hidden;
+    transition: all 1.5s;
+  }
+ .hover-height:hover{
+  margin-top: 0px;
+ }
+  
+
+
+  .oneline{
+    
+      display: block;
+      width: 60px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      margin: auto;
+      padding-top: 12px;
+    }
+      
+    
+    .oneline span {
+      margin: auto;
+      padding-top: 8px;
+      display: block;
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: #0000002a;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+    }
+
+   @media screen and ( max-width:440px ) {
+    li.list-mapel{
+      text-align: left;
+    }
+    ul.ulmapel{
+      text-align: left;
+      list-style-type: disc;
+    }
+   }

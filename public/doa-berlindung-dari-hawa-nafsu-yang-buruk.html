@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adDu'a.app</title>
+
+  <!--AOS MASTER-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--LINK STYLE-->
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper-card.css">
+  
+  <!--TAILWIND-->
+  <link rel="stylesheet" href="tailwind/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind/tailwind.config.js"></script>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="uikit/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+
+
+  <!--FONTAWESOME-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+     
+     body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .dark {
+        background-color: #090918;
+        color: #fff;
+    }
+    .dark .exit {
+        background-color: #9d00ff;
+        color: #fff;
+    }
+    
+    .dark .opening {
+        border: 1px solid #ffffff10;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #47474725;
+    }
+    .dark nav {
+        border: 1px solid #ffffff10;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #071839af;
+    }
+    
+    .show-notif:active{
+      display: none;
+    }
+    
+    .dark .card-doa{
+      background-color: #1e1d3c;
+    }
+    .dark .card-footer-doa{
+      background-color: #1e1d3c;
+    }
+    .dark .sidebar{
+      background-color: #1b1b1b;
+    }
+    .dark .list-box{
+      background-color: #272727;
+    }
+    .list-box:hover{
+      background-color: #9b46f0;
+      color: white;
+    }
+    
+    .dark ::-webkit-scrollbar {
+      background-color: #1b1b1b;
+      width: 8px;
+      padding: 15px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background-color: #767676;
+      border-radius: 15px;
+      
+    }
+    
+    
+    #dark-toggle:checked ~ label .toggle-circle{
+       transform: translateX(12px);
+    }
+    
+    card-hidden{
+      display: none;
+    }
+    
+    .sidebar{
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .sidebar-icon{
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .sidebar-icon.icon-rotate{
+    transform: rotate(180deg);
+    }
+    
+    .sidebar.move-left {
+      left: 0px;
+    }
+    </style>
+</head>
+<body class=" initu h-auto overflow-x-hidden">
+  <nav class="navi z-40  bg-white border border-b sticky top-0">
+    <div class="brand-group flex items-center gap-2 justify-center">
+      <img src="Screenshot 2024-05-19 at 09.49.21.png" class="rounded-full scale-100" alt="">
+      <h2 class="brand text-2xl text-sky-900 font-bold font-montserrat">adDu'a</h2>
+    </div>
+    <div id="menu-icon" class="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul id="menu-list" class="hidden show ">
+      <li>
+          <a href="index.html">Beranda</a>
+      </li>
+        <li>
+          <a href="portfolio.html">Developer</a>
+        </li>
+        <div class="flex items-center">
+          <i class="fa-solid fa-sun text-orange-500 text-sm no-underline  mr-2"></i>
+          <input type="checkbox" name="" class="hidden" id="dark-toggle">
+          <label for="dark-toggle" type="text">
+            <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+              <div class="toggle-circle h-4 w-4 rounded-full transition duration-300 ease-in-out bg-white"></div>
+            </div>
+          </label>
+          <i class="fa-solid fa-moon text-yellow-300 text-sm no-underline  ml-2"></i>
+        </div>
+    </ul>
+  </nav>
+    
+      <div class="flex gap-1.5 items-center exit z-20  justify-center bg-black p-2 py-2.5 rounded-full top-24 ml-6 text-white absolute">
+        <a href="catatan-islam.html" class=""><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></a></div>
+  
+  <div class="notification fixed z- w-full top-1/2 transform -translate-y-1/2 mx-auto z-50 px-4" style="left: 0.3px; display: none; height: auto;">
+    <div class="card-notif relative bg-white mx-auto p-0 mt-0 none w-full h-auto pb-24   shadow-2xl" style="max-width: 621px; margin-left: auto; margin-right: auto;">
+      <div class="top w-full flex px-5 flex-row justify-between items-center border">
+        <p class="text-black text-2xl">Notifikasi</p>
+        <i class="fa-solid fa-xmark cursor-pointer text-zinc-300 hover:text-red-600" id="close"></i>
+      </div>
+      <div class="gif w-full mx-auto mt-4">
+        <img src="image/repair-tools.gif" width="154" class="mx-auto" height="auto" alt="" srcset="">
+      </div>
+      <div class="w-full mx-auto text-center relative" style="align-items: center;">
+        <p class="text-gray-300 mx-auto text-center terounded-xl pt-1.5" style="font-family: 'Montserrat',sans-serif;">Ops, maaf! Website sedang dibangun</p>
+        <p class="text-black text-center text-sm no-underline ">Kami hanya bisa menampilkan UI sementara</p>
+        <a href="" class="p-2 bg-blue-600 text-center text-white top-8 relative mx-auto">Lihat UI</a>
+      </div>
+    </div>
+  </div>
+  </div>
+    
+
+  <div class="option-box hidden z- w-full top-1/2 transform -translate-y-1/2 mx-auto z-40 px-4 ">
+    <div class="card-opt flex flex-col items-center  bg-white rounded-lg shadow-2xl  mx-auto" style="width: 268px; height: auto;">
+      <div class="top-content w-full mx-auto py-4 flex flex-col items-center">
+        <p class="text-black text-center text-lg" style="font-family: 'Montserrat',sans-serif;">Silahkan Pilih</p>
+        <iconify-icon icon="mingcute:notification-line" class="pt-2" width="80"></iconify-icon>
+      </div>
+      <div class="footer-content-opt w-full flex flex-col">
+        <div class="share-box py-2 w-full border border-gray-200 flex flex-row gap-2 justify-center items-center">
+          <iconify-icon icon="material-symbols:share" width="25" class=""></iconify-icon>
+          <a href="" class="text-lg text-gray-400 font-thin">Bagikan</a>
+        </div>
+        <div class="download-box py-2 w-full border-b border-gray-200 flex flex-row justify-center gap-2 items-center">
+          <iconify-icon icon="material-symbols:download" width="25"></iconify-icon>
+        </div>
+        <div class="closew w-full py-2 border-b text-center border-gray-300 mx-auto">
+          <p class="text-red-600 text-lg text-center cursor-pointer">Close</p>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sidebar max bg-white rounded-xl pt-1.5 fixed -left-56 z-20 w-full top-1/2 transform -translate-y-1/2 mx-auto py-4 overflow-y-hidden" style="width: 250px;height: 442px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+    <div class="sidebar-content flex flex-col w-full relative overflow-y-hidden">
+      <div class="sidebar-top border-b pb-3 border-gray-200 w-full flex flex-row justify-evenly items-center">
+        <iconify-icon icon="solar:book-outline" class="text-3xl"></iconify-icon>
+        <div class="sidebar-top-text flex flex-col">
+          <a href="" class="text-xl" style="font-family: 'Montserrat',sans-serif;">Kumpulan Doa</a>
+          <p class="text-sm no-underline  text-gray-300 font-thin">aditya's notes</p>
+        </div>
+      </div>
+
+      <div class="flex flex-row justify-center items-center ">
+      <div class="choose-dua flex flex-row items-center gap-5 px-5 py-2 w-full">
+        <iconify-icon icon="bi:folder-fill" width="30"></iconify-icon>
+        <p class="">Pilih Doa</p>
+      </div>
+      <div class="sidebar-icon relative px-2 pb-1 z-30 bg-violet-600 text-white rounded-full ">
+        <iconify-icon icon="ooui:next-ltr" width="10" class="font-bold" style="font-weight: 500;"></iconify-icon>
+      </div>
+      </div>
+      <div class="scroll-doa-box w-full overflow-x-hidden relative rounded-xl px-5 overflow-y-scroll pb-2 " style="height: 332px;">
+        <ul class=" w-full flex flex-col gap-2">
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis " style="width: 203px; height: 37px;"><a href="doa-ampunan-ortu.html" class="text-sm decoration-orange-600">Doa Memohon Ampunan</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis " style="width: 203px; height: 37px;"><a href="doa-agar-istiqomah.html" class="text-sm decoration-orange-600">Doa Agar Istiqomah</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-saat-hujan.html" class="text-sm no-underline ">Doa Saat Hujan</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-ketika-dipuji-oranglain.html" class="text-sm no-underline ">Doa Ketika Dipuji</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-agar-tidak-hilang-nikmat.html" class="text-sm no-underline ">Agar Tidak Hilang Nikmat</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-4-hal.html" class="text-sm no-underline ">Berlindung 4 Hal</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-kesyirikan.html" class="text-sm no-underline ">Berlindung Dari Syirik</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-memohon-agar-amalan-diterima.html" class="text-sm no-underline ">Memohon Amalan Diterima</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-untuk-palestina.html" class="text-sm no-underline ">Doa Untuk Palestina</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-menghilangkan-pikiran-kotor.html" class="text-sm no-underline ">Menghilangkan Pikiran Kotor</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-cobaan-yang-berat.html" class="text-sm no-underline ">Berlindung Dari Cobaan Berat</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-orang-dzalim.html" class="text-sm no-underline ">Berlindung Dari Orang Dzalim</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-hawa-nafsu-yang-buruk.html" class="text-sm no-underline ">Berlindung Nafsu Buruk</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-terhindar-maksiat.html" class="text-sm no-underline ">Doa Terhindar Maksiat</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-terhindar-kekufuran-kefasikan-kemunafikan-sum'ah-riya'.html" class="text-sm no-underline ">Doa Terhindar Fasik, Munafik</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-dikumpulkan-dengan-orang-shalih.html" class="text-sm no-underline ">Dikumpulkan Orang Shalih</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-ketika-mengalami-kesusahan.html" class="text-sm no-underline ">Ketika Mengalami Kesusahan</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-hutang.html" class="text-sm no-underline ">Doa Berlindung Dari Hutang</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-meminta-petunjuk-yang-lurus.html" class="text-sm no-underline ">Doa Petunjuk dan Hidayah</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-berlindung-dari-mati-yang-mengerikan.html" class="text-sm no-underline ">Berlindung Mati Mengerikan</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-memohon-mati-syahid.html" class="text-sm no-underline ">Memohon Mati Syahid</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-bangun-tidur.html" class="text-sm no-underline ">Doa Bangun Tidur</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-keluar-rumah.html" class="text-sm no-underline ">Doa Keluar Rumah</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-naik-kendaraan.html" class="text-sm no-underline ">Doa Naik Kendaraan</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-masuk-pasar.html" class="text-sm no-underline ">Doa Masuk Pasar dan Mall</a></li>
+          <li class="bg-gray-200 px-2 list-box rounded-xl pt-1.5 text-nowrap text-ellipsis no-underline" style="width: 203px; height: 37px;"><a href="doa-makan.html" class="text-sm no-underline ">Doa Makan</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--BATAS SIDEBAR-->
+  <div class="w-11/12 mx-auto flex gap-5 flex-row pb-10 relative z-10 justify-center pt-32" style="height: 100vh;">
+    <ul class="flex flex-col gap-4">
+        <li class="list-card">
+            <div class="card-doa relative bg-white rounded-xl pt-1.5" style=" max-width: 474px; height: auto; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;">
+                <div class="top-content-card flex flex-row items-center justify-between mr-5">
+                  <div class="flex p-3  gap-1.5 items-center">
+                    <img src="image/profile/the-quranpath.jpg" class="rounded-full h-auto w-8" alt="">
+                    <a href="https://www.instagram.com/thequran_path/" class="username" name="username-instagram" class="font-bold ">@thequran_path</a>
+                  </div>
+                    
+                </div>
+                <div class="uk-position-relative uk-visible-toggle uk-light w-full" tabindex="-1" uk-slider>
+
+                  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                      <li class="w-full h-auto">
+                          <img src="image/doa-terhindar-akhlak-dan-nafsu-buruk/doa-berlindung-hawa-nafsu-akhlak-buruk.jpeg" class="object-cover mx-auto w-full h-auto" alt="">
+                          <div class="uk-position-center uk-panel"></div>
+                      </li>
+                      <li class="w-full h-auto">
+                          <img src="image/doa-terhindar-akhlak-dan-nafsu-buruk/doa-berlindung-hawa-nafsu-akhlak-buruk(1).jpeg" class="object-cover mx-auto w-full h-auto" alt="">
+                          <div class="uk-position-center uk-panel"></div>
+                      </li>
+                  </ul>
+              
+                  <a class="uk-position-center-left uk-position-small pr-3 bg-black rounded-full "  href uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small  bg-black rounded-full " href uk-slidenav-next uk-slider-item="next"></a>
+              
+              </div>
+                <div class="card-footer-doa  w-full p-3 ">
+                  <div class="relative flex flex-row items-center gap-1 text-sm no-underline  flex-wrap w-full h-auto">
+                  <a href="https://www.instagram.com/thequran_path/" class="font-bold text-sm no-underline ">thequran_path</a>
+                  <p class="show-more-descript px-1 text-blue-600 cursor-pointer">Show More</p>
+                </div>
+                  <div class="descript w-full card-hidden"><span class="font-bold">Doa berlindung dari Akhlak, Amal perbuatan, dan Hawa Nafsu yang buruk</span> amalkan doa ini agar Allah menjagamu dari perbuatan yang buruk.
+            </div>
+        </li>
+    </ul></div>
+
+
+    <script>
+    const OB= document.querySelector('.option-box');
+    const closetxt = OB.querySelector('.closew');
+    const cardOpt = OB.querySelector('.card-opt');
+    const optBtn = document.querySelectorAll('.optionBtn-new');
+    const download = document.querySelector('.download-box');
+
+
+    OB.appendChild(cardOpt);
+    OB.style.display = 'none';
+    closetxt.addEventListener('click', () =>{
+    OB.style.display = 'none';
+    });
+
+
+
+    optBtn[0].addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.textContent = 'Download';
+    link.href = 'image/doa-terhindar-akhlak-dan-nafsu-buruk/doa-berlindung-hawa-nafsu-akhlak-buruk(1).jpeg';
+
+    download.addEventListener('click', () => {
+
+    link.download = 'Doa agar terhindar dari hawa nafsu dan akhlak buruk'; // Menentukan nama file yang akan diunduh
+    link.click(); // Memicu pengunduhan file gambar           
+    }); 
+
+    // Mengecek apakah elemen download-box sudah memiliki child element dengan teks 'download'
+    const existingLink = download.querySelector('a');
+    if (!existingLink) {
+    download.appendChild(link);
+    }
+    OB.style.display = 'flex';
+    });
+    </script>
+    <script src="js script/nav.js"></script>
+    <script src="js script/darkL.js"></script>
+    <script src="js script/filter.js"></script>
+    <script src="js script/dateportfolio.js"></script>
+    <script src="js script/doa.js"></script>
+    <script src="js script/box.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind/tailwind.config.js"></script>
+  
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
